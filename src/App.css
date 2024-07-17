@@ -1,0 +1,103 @@
+/* Define the keyframes for the gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Apply the animation to the body */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures that the body takes at least the viewport height */
+  display: flex;
+  flex-direction: column; /* Allow for vertical stacking of content */
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #9fbcdd, #9fcfa7, #9dbee8, #9bd3b3, #9bc6e4, #c4c4ef, #ada8f3);
+  background-size: 900% 900%; /* Increase to smooth out the gradient transition */
+  animation: gradientAnimation 15s ease-in-out infinite;
+
+
+  position: relative; /* Ensure content is above the background */
+  overflow: auto; /* Enable scrolling */
+}
+
+/* Add some styling for the content */
+.App {
+  text-align: center;
+  color: #fff;
+  position: relative; /* Ensure content is above the background */
+  z-index: 2; /* Ensure it's above the background */
+  padding: 20px; /* Add padding to make the content more readable */
+}
+
+/* Optional: Overlay gradient to smooth out the edges */
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Add a semi-transparent overlay */
+  pointer-events: none; /* Ensure it doesn't interfere with the content */
+  z-index: 1; /* Ensure it's below the content */
+}
+
+h1,h2,h3,p {
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2,h3,p {
+  font-family: 'Roboto Mono ',monospace;
+  
+}
+
+h1,h2 {
+  text-transform: uppercase;
+
+}
+
+h2,h3{
+  font-size: 20px;
+}
+
+h1{
+
+font-family: 'Montserrat' sans-serif ;
+font-optical-sizing: auto;
+font-weight: 750;
+font-style: Medium;
+font-size: 32px;
+
+
+}
+
+p{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.sectionTitle{
+  margin-bottom: 30px ;
+}
+
+.hover{
+  cursor:pointer;
+}
