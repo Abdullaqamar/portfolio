@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 20px;
     text-align: center;
+    align-items: center; /* Center horizontally */
     height: 85dvh;
     min-height: 85px;
   
