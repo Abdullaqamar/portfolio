@@ -16,23 +16,23 @@
 //           h3="Viberr"
 //           p="Streaming App"
 //         />
-//         <ProjectCard
-//           src={freshBurger}
-//           link="https://github.com/Ade-mir/company-landing-page-2"
-//           h3="Fresh Burger"
-//           p="Hamburger Restaurant"
-//         />
-//         <ProjectCard
-//           src={hipsster}
-//           link="https://github.com/Ade-mir/company-landing-page-2"
-//           h3="Hipsster"
-//           p="Glasses Shop"
-//         />
-//         <ProjectCard
-//           src={fitLift}
-//           link="https://github.com/Ade-mir/company-landing-page-2"
-//           h3="FitLift"
-//           p="Fitness App"
+        // <ProjectCard
+        //   src={freshBurger}
+        //   link="https://github.com/Ade-mir/company-landing-page-2"
+        //   h3="Fresh Burger"
+        //   p="Hamburger Restaurant"
+        // />
+        // <ProjectCard
+        //   src={hipsster}
+        //   link="https://github.com/Ade-mir/company-landing-page-2"
+        //   h3="Hipsster"
+        //   p="Glasses Shop"
+        // />
+        // <ProjectCard
+        //   src={fitLift}
+        //   link="https://github.com/Ade-mir/company-landing-page-2"
+        //   h3="FitLift"
+        //   p="Fitness App"
 //         />
 
     
@@ -46,6 +46,9 @@
 import React, { useState } from 'react';
 import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/viberr.png';
+import freshBurger from '../../assets/fresh-burger.png';
+import hipsster from '../../assets/hipsster.png';
+import fitLift from '../../assets/fitlift.png';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -68,9 +71,27 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={viberr}
-          h3="Show Viberr &nbsp;&nbsp;&nbsp; 2022"
+          h3="Show Viberr"
           p="Streaming App"
           onButtonClick={() => handleOpenModal({ src: viberr, h3: "Viberr", p: "Streaming App" })}
+        />
+        <ProjectCard
+          src={freshBurger}
+          h3="Fresh Burger"
+          p="Hamburger Restaurant"
+          onButtonClick={() => handleOpenModal({ src: freshBurger, h3: "Fresh Burger", p: "Hamburger Restaurant" })}
+        />
+        <ProjectCard
+          src={hipsster}
+          h3="Hipsster"
+          p="Glasses Shop"
+          onButtonClick={() => handleOpenModal({ src: hipsster, h3: "Hipsster", p: "Glasses Shop" })}
+        />
+        <ProjectCard
+          src={fitLift}
+          h3="FitLift"
+          p="Fitness App"
+          onButtonClick={() => handleOpenModal({ src: fitLift, h3: "FitLift", p: "Fitness App" })}
         />
       </div>
       {isModalOpen && (
