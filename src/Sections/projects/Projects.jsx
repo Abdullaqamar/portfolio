@@ -71,25 +71,25 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={viberr}
-          h3="Show Viberr"
+          h3="Viberr &nbsp;&nbsp;&nbsp;2024"
           p="Streaming App"
           onButtonClick={() => handleOpenModal({ src: viberr, h3: "Viberr", p: "Streaming App" })}
         />
         <ProjectCard
           src={freshBurger}
-          h3="Fresh Burger"
+          h3="Fresh Burger&nbsp;&nbsp;&nbsp;2023"
           p="Hamburger Restaurant"
           onButtonClick={() => handleOpenModal({ src: freshBurger, h3: "Fresh Burger", p: "Hamburger Restaurant" })}
         />
         <ProjectCard
           src={hipsster}
-          h3="Hipsster"
+          h3="Hipsster&nbsp;&nbsp;&nbsp;2023"
           p="Glasses Shop"
           onButtonClick={() => handleOpenModal({ src: hipsster, h3: "Hipsster", p: "Glasses Shop" })}
         />
         <ProjectCard
           src={fitLift}
-          h3="FitLift"
+          h3="FitLift&nbsp;&nbsp;&nbsp;2022"
           p="Fitness App"
           onButtonClick={() => handleOpenModal({ src: fitLift, h3: "FitLift", p: "Fitness App" })}
         />
