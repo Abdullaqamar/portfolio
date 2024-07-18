@@ -1,7 +1,11 @@
+/* ProjectStyles.module.css */
+
 .container {
-    text-align: center;
-    p {
-      font-size: 16px;
-      color: black
-    }
-  }
+  text-align: center;
+}
+
+.container p {
+  font-size: 16px;
+  color: black;
+  margin-top: 15px; /* Add a 5px gap */
+}
