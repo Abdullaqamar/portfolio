@@ -70,21 +70,17 @@ function Projects() {
           src={viberr}
           h3="Show Viberr &nbsp;&nbsp;&nbsp; 2022"
           p="Streaming App"
-          onButtonClick={() =>
-            handleOpenModal({ src: viberr, h3: 'Viberr', p: 'Streaming App' })
-          }
+          onButtonClick={() => handleOpenModal({ src: viberr, h3: "Viberr", p: "Streaming App" })}
         />
       </div>
       {isModalOpen && (
         <>
           <div className={styles.overlay} onClick={handleCloseModal}></div>
           <div className={styles.modal}>
-            <button className={styles.closeButton} onClick={handleCloseModal}>
-              X
-            </button>
             <img src={modalContent.src} alt={`${modalContent.h3} logo`} />
             <h3>{modalContent.h3}</h3>
             <p>{modalContent.p}</p>
+            <button className={styles.closeButton} onClick={handleCloseModal}>X</button>
           </div>
         </>
       )}
