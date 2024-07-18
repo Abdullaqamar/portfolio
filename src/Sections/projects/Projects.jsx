@@ -72,7 +72,7 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={viberr}
-          h3="Viberr"
+          h3="Show Viberr"
           p="Streaming App"
           onButtonClick={() => handleOpenModal({ src: viberr, h3: "Viberr", p: "Streaming App" })}
         />

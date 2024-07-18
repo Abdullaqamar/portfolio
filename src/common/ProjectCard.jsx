@@ -12,13 +12,16 @@
 
 // export default ProjectCard;
 
-
 import React from 'react';
+import styles from '../Sections/projects/ProjectsStyles.module.css';
 
 function ProjectCard({ src, h3, p, onButtonClick }) {
   return (
-    <div>
-      <button onClick={onButtonClick}>Show {h3}</button>
+    <div className={styles.projectText}>
+      <h3>{h3}</h3>
+      <button className={styles.projectButton} onClick={onButtonClick}>
+       
+      </button>
     </div>
   );
 }
