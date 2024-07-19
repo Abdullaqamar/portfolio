@@ -1,131 +1,106 @@
-/* .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
 
-  
-    a {
-      width: fit-content;
-      text-decoration: none;
-      color: #222;
-      transition: transform 200ms ease-in-out;
-    }
-  
-    a:hover {
-      transform: scale(1.1);
-    }
-  }
-  
+@media (width >= 800px) {
   .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 30px;
   }
-  
-  @media (width >= 800px) {
-    .projectsContainer {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding: 0 30px;
-    }
-  } */
+}
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .projectsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-  }
-  
-  @media (width >= 800px) {
-    .projectsContainer {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      padding: 0 30px;
-    }
-  }
-  
-  .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-  }
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  border-radius: 10px; /* Added border-radius for slight curve */
+}
 
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }
-  .closeButton {
-    position: absolute;
-    top: 10px; /* Adjust as needed */
-    right: 10px; /* Adjust as needed */
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-  }
-  
-  .projectText {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .projectText h3 {
-    margin: 0;
-    padding: 10px 20px;
-  }
-  
-  .projectButton {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border: none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    transition: opacity 200ms ease-in-out, box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
-    opacity: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-  }
-  
-  .projectText:hover .projectButton {
-    opacity: 0.5;
-    transform: scale(1.05);
-  }
-  
-  .projectButton:active {
-    transform: translateY(2px);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
-  }
-  
+.modal h3 {
+  text-decoration: underline; /* Underline the h3 inside the modal */
+  margin-bottom: 3px; /* Added space below h3 */
+}
+
+.modal p {
+  text-align: left; /* Align p element to the right inside the modal */
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.projectText {
+  position: relative;
+  display: inline-block;
+}
+
+.projectText h3 {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.projectButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: opacity 200ms ease-in-out, box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.projectText:hover .projectButton {
+  opacity: 0.5;
+  transform: scale(1.05);
+}
+
+.projectButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}

@@ -1,54 +1,10 @@
-// import styles from './ProjectsStyles.module.css';
-// import viberr from '../../assets/viberr.png';
-// import freshBurger from '../../assets/fresh-burger.png';
-// import hipsster from '../../assets/hipsster.png';
-// import fitLift from '../../assets/fitlift.png';
-// import ProjectCard from '../../common/ProjectCard';
 
-// function Projects() {
-//   return (
-//     <section id="projects" className={styles.container}>
-//       <h1 className="sectionTitle">Projects</h1>
-//       <div className={styles.projectsContainer}>
-//         <ProjectCard
-//           src={viberr}
-//           link="https://github.com/Ade-mir/company-landing-page-2"
-//           h3="Viberr"
-//           p="Streaming App"
-//         />
-        // <ProjectCard
-        //   src={freshBurger}
-        //   link="https://github.com/Ade-mir/company-landing-page-2"
-        //   h3="Fresh Burger"
-        //   p="Hamburger Restaurant"
-        // />
-        // <ProjectCard
-        //   src={hipsster}
-        //   link="https://github.com/Ade-mir/company-landing-page-2"
-        //   h3="Hipsster"
-        //   p="Glasses Shop"
-        // />
-        // <ProjectCard
-        //   src={fitLift}
-        //   link="https://github.com/Ade-mir/company-landing-page-2"
-        //   h3="FitLift"
-        //   p="Fitness App"
-//         />
-
-    
-
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Projects;
 import React, { useState } from 'react';
 import styles from './ProjectsStyles.module.css';
 import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import computerVision from '../../assets/computer vision1.png';
+import arduinoLCD from '../../assets/Arduino+LCD.jpeg';
+import pythonGame from '../../assets/ezgif-3-5f84d827be.mp4'; // New video import
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -76,29 +32,36 @@ function Projects() {
           onButtonClick={() => handleOpenModal({ src: viberr, h3: "Viberr", p: "Streaming App" })}
         />
         <ProjectCard
-          src={freshBurger}
-          h3="Fresh Burger&nbsp;&nbsp;&nbsp;2023"
-          p="Hamburger Restaurant"
-          onButtonClick={() => handleOpenModal({ src: freshBurger, h3: "Fresh Burger", p: "Hamburger Restaurant" })}
+          src={computerVision}
+          h3="OpenMV Cam computer vision"
+          p="Developed a computer vision algorithm for the OpenMV camera with Edge Impulse to track and identify kinds of plastics on the RVM conveyor."
+          onButtonClick={() => handleOpenModal({ src: computerVision, h3: "OpenMV Cam computer vision", p: "Developed a computer vision algorithm for the OpenMV camera with Edge Impulse to track and identify kinds of plastics on the RVM conveyor." })}
         />
         <ProjectCard
-          src={hipsster}
-          h3="Hipsster&nbsp;&nbsp;&nbsp;2023"
-          p="Glasses Shop"
-          onButtonClick={() => handleOpenModal({ src: hipsster, h3: "Hipsster", p: "Glasses Shop" })}
+          src={arduinoLCD}
+          h3="Arduino+LCD 1.28″"
+          p="• - Developed and implemented software for an Arduino and Raspberry Pi Zero to process sensor data and display plastic type information on a 2.8-inch LCD, integrated into a handheld sensor gun."
+          onButtonClick={() => handleOpenModal({ src: arduinoLCD, h3: "Arduino+LCD 1.28″", p: "• - Developed and implemented software for an Arduino and Raspberry Pi Zero to process sensor data and display plastic type information on a 2.8-inch LCD, integrated into a handheld sensor gun." })}
         />
         <ProjectCard
-          src={fitLift}
-          h3="FitLift&nbsp;&nbsp;&nbsp;2022"
-          p="Fitness App"
-          onButtonClick={() => handleOpenModal({ src: fitLift, h3: "FitLift", p: "Fitness App" })}
+          src={pythonGame} // New ProjectCard
+          h3="2D Python game"
+          p="• Developed 'Box Bash,' a 2D game using the Pygame library, where players control a character to avoid colliding."
+          onButtonClick={() => handleOpenModal({ src: pythonGame, h3: "2D Python game", p: "• Developed 'Box Bash,' a 2D game using the Pygame library, where players control a character to avoid colliding." })}
         />
       </div>
       {isModalOpen && (
         <>
           <div className={styles.overlay} onClick={handleCloseModal}></div>
           <div className={styles.modal}>
-            <img src={modalContent.src} alt={`${modalContent.h3} logo`} />
+            {modalContent.src.endsWith('.mp4') ? (
+              <video controls width="100%">
+                <source src={modalContent.src} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <img src={modalContent.src} alt={`${modalContent.h3} logo`} />
+            )}
             <h3>{modalContent.h3}</h3>
             <p>{modalContent.p}</p>
             <button className={styles.closeButton} onClick={handleCloseModal}>X</button>
