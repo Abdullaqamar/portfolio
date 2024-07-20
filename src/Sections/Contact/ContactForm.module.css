@@ -1,0 +1,126 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* Remove outline of all elements on focus */
+*:focus {
+  outline: 0;
+}
+
+body {
+  background: #263238; /* Set background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal overlay */
+.formOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+/* Form container */
+.container {
+  background: #30fccc; /* Updated background color */
+  padding: 24px;
+  border-radius: 24px; /* More curved corners for the form container */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional shadow to enhance visibility */
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Heading */
+h4 {
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+  font-size: 28px; /* Increase font size */
+  text-align: left; /* Align text to the left */
+  margin-top: 0; /* Remove top margin if needed */
+  margin-bottom: 20px; /* Increase space below the heading */
+}
+
+/* Label */
+label {
+  display: block;
+  font-size: 0.85em;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* Input and textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 16px; /* More curved corners for input fields and textarea */
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  text-align: left;
+}
+
+/* Submit button */
+.contactButton {
+  background-color: rgb(102, 102, 246); /* Set the background color to blue */
+  color: black; /* Text color */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  width: 100px; /* Adjusted width */
+  height: 40px; /* Adjusted height */
+  font-size: 13px; /* Adjusted font size */
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); /* Box shadow for a subtle 3D effect */
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out; /* Smooth transition for effects */
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat font */
+  text-align: center; /* Center the text */
+  display: flex; /* Use flex for centering content */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  cursor: pointer; /* Show pointer cursor on hover */
+  margin: 0 auto; /* Center horizontally */
+}
+
+/* Submit button hover effect */
+.contactButton:hover {
+  transform: scale(1.1); /* Slightly scale up */
+}
+
+/* Submit button active effect */
+.contactButton:active {
+  transform: translateY(2px); /* Move button down slightly on click */
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); /* Adjust shadow to match active state */
+}
+
+/* Close button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(32, 161, 241, 0.8); /* Semi-transparent background */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Circular button */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.8); /* Darker semi-transparent on hover */
+}

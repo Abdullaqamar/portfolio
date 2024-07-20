@@ -1,76 +1,61 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-    align-items: center; /* Center horizontally */
-    height: 85dvh;
-    min-height: 85px;
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  align-items: center; /* Center horizontally */
+  height: 85dvh;
+  min-height: 85px;
+}
 
-  
-    span {
-      display: flex;
-      gap: 25px;
-      justify-content: center;
-  
-      a {
-        margin: 0;
-  
+span {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
 
-      }
-    }
-  
-    a {
-      width: fit-content;
-      align-self: center;
-    }
-    
-    span a img {
-      width: 24px; /* Adjust the size as needed */
-      height: 24px; /* Adjust the size as needed */
-    }
-  
+a {
+  width: fit-content;
+  align-self: center;
+}
 
-  }
-  
-  .colorModeContainer {
-    position: relative;
-  }
-  
+span a img {
+  width: 24px; /* Adjust the size as needed */
+  height: 24px; /* Adjust the size as needed */
+}
 
+.description {
+  max-width: 24ch;
+}
 
-  
-  .description {
-    max-width: 24ch;
-    
-  }
-  
-  .info {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  @media (width >= 800px) {
-    .container {
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: space-evenly;
-  
-      .hero {
-        max-width: 350px;
-        width: 350px;
-      }
-    }
-  }
-  
-  @media (width >= 1400px) {
-    .container {
-      .hero {
-        max-width: 400px;
-        width: 400px;
-      }
-    }
-  }
+/* Center the button in the container */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 15px;
+}
+
+.contactButton {
+  background-color: rgb(102, 102, 246); /* Set the background color to blue */
+  color: black; /* Text color */
+  border: none;
+  border-radius: 20px;
+  width: 100px; /* Adjusted width */
+  height: 40px; /* Adjusted height */
+  font-size: 13px; /* Adjusted font size */
+  font-weight: bold;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+  font-family: 'Montserrat', monospace; /* Apply Roboto Mono font */
+}
+
+.contactButton:hover {
+  transform: scale(1.1); /* Slightly reduced scaling effect */
+}
+
+.contactButton:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}

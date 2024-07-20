@@ -12,6 +12,7 @@ function App() {
     <Projects/>
     <Footer /> {/* Add the Footer component */}
 
+
   </>
   );
 }

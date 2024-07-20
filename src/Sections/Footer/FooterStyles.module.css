@@ -9,3 +9,9 @@
   color: black;
   margin-top: 15px; /* Add a 5px gap */
 }
+
+.reactNote {
+  font-size: 0.8em; /* Make the text smaller */
+  color: #555; /* Use a lighter color for the text */
+  font-family: "Roboto Mono";
+}
