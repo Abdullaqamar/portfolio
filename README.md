@@ -76,8 +76,11 @@ To start the development server, use:
 ```bash
 npm start
 ```
+or 
+```bash
+npm run dev
+```
 
-This will open the application in your default browser, usually at `http://localhost:3000`.
 
 ### Customizing the Application
 
@@ -104,10 +107,3 @@ To add a new project:
 
 - The `Hero.jsx` component includes a button to show the contact form overlay. Update the `ContactForm` component in the `Contact` directory as needed.
 
-## Troubleshooting
-
-- Ensure all file paths are correct.
-- Check the browser console for any error messages if something isn't working as expected.
-- Refer to React documentation for any issues related to component behavior or state management.
-
-Feel free to explore and modify the code to suit your needs. Happy coding!
