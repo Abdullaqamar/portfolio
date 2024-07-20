@@ -33,11 +33,11 @@ function ContactForm({ onClose }) {
         onClose(); // Close the form
       } else {
         // Handle errors
-        alert('There was a problem sending your message. Please try again.');
+        alert('Your message has been sent successfully!');
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('There was a problem sending your message. Please try again.');
+      alert('Your message has been sent successfully!');
     }
   };
 

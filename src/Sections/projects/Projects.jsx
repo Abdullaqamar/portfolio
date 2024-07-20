@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
 import computerVision from '../../assets/computer vision1.png';
 import arduinoLCD from '../../assets/Arduino+LCD.jpeg';
 import pythonGame from '../../assets/ezgif-3-5f84d827be.mp4';

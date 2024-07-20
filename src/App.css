@@ -26,7 +26,6 @@ body {
   flex-direction: column; /* Allow for vertical stacking of content */
   align-items: center;
   justify-content: center;
-  font-family: Arial, sans-serif;
   background: linear-gradient(45deg, #9fbcdd, #9fcfa7, #9dbee8, #9bd3b3, #9bc6e4, #c4c4ef, #ada8f3);
   background-size: 800% 800%; /* Increase to smooth out the gradient transition */
   animation: gradientAnimation 15s ease-in-out infinite;
