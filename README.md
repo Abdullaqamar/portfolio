@@ -108,3 +108,39 @@ To add a new project:
 
 - The `Hero.jsx` component includes a button to show the contact form overlay. Update the `ContactForm` component in the `Contact` directory as needed.
 
+
+
+
+GIT REFERENCE:-------------------------------------------------------------------------------------------------
+GIT UPLOAD:
+
+# Initialize Git repository if not already done
+git init
+
+# Add files and commit changes
+git add .
+git commit -m "Initial commit"
+
+# Add the remote repository URL
+git remote add origin https://github.com/Abdullaqamar/portfolio.git
+
+# Verify the remote URL
+git remote -v
+
+# Check the current branch
+git branch
+
+# Rename branch to 'main' if necessary
+git branch -M main
+
+# Push the 'main' branch to GitHub
+git push -u origin main
+
+
+UPDATE CHANGES:
+git add .                          # Stage all changes
+git commit -m "Update styles and fix responsiveness"  # Commit changes with a message
+git push origin main              # Push changes to the main branch
+
+
+
