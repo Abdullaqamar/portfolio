@@ -8,6 +8,7 @@ import aimForge from '../../assets/AimForge.mp4'; // New video import
 import robotTrolley from '../../assets/RobotTrolley.jpeg'; // New image import
 import roboticArm from '../../assets/Robotarm.png'; // New image import
 import ProjectCard from '../../common/ProjectCard';
+import Thermalvideo from '../../assets/Thermalvideo.mp4'; // New video import
 
 function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -27,6 +28,15 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
+        
+        <ProjectCard
+          src={Thermalvideo}
+          h3="Thermal Simulation using Abaqus FEA"
+          p="• Conducted simulations using Abaqus to evaluate changes in thermal resistance during large plastic deformations at each deformation step."
+          onButtonClick={() => handleOpenModal({ src: Thermalvideo, h3: "Thermal Resistance Simulation", p: "• Conducted simulations using Abaqus to evaluate changes in thermal resistance during large plastic deformations at each deformation stage." })}
+          isVideo={true}
+        />
+
 
         <ProjectCard
           src={computerVision}
