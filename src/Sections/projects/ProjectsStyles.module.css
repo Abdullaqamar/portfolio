@@ -30,6 +30,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   border-radius: 10px; /* Added border-radius for slight curve */
+<<<<<<< HEAD
+=======
+  max-width: 90%; /* Make modal responsive */
+  max-height: 90%; /* Ensure modal is within screen bounds */
+  overflow: auto; /* Allow scrolling if content overflows */
+>>>>>>> origin/master
 }
 
 .modal h3 {
@@ -38,7 +44,11 @@
 }
 
 .modal p {
+<<<<<<< HEAD
   text-align: left; /* Align p element to the right inside the modal */
+=======
+  text-align: left; /* Align p element to the left inside the modal */
+>>>>>>> origin/master
 }
 
 .overlay {
@@ -104,3 +114,15 @@
   transform: translateY(2px);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 }
+<<<<<<< HEAD
+=======
+
+.modal video {
+  width: 60%; /* Limit width to 60% of the modal */
+  max-width: 800px; /* Set max width */
+  height: auto; /* Maintain aspect ratio */
+  margin: 0 auto; /* Center the video */
+  display: block; /* Make the video block-level element */
+}
+
+>>>>>>> origin/master
