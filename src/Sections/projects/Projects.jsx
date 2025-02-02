@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-=======
 import React, { useState } from 'react'; 
->>>>>>> origin/master
 import styles from './ProjectsStyles.module.css';
 import computerVision from '../../assets/computer vision1.png';
 import arduinoLCD from '../../assets/Arduino+LCD.jpeg';
@@ -11,24 +7,15 @@ import solidworksAnimation from '../../assets/0001-0171.mp4'; // New video impor
 import aimForge from '../../assets/AimForge.mp4'; // New video import
 import robotTrolley from '../../assets/RobotTrolley.jpeg'; // New image import
 import roboticArm from '../../assets/Robotarm.png'; // New image import
-<<<<<<< HEAD
-import ProjectCard from '../../common/ProjectCard';
-import Thermalvideo from '../../assets/Thermalvideo.mp4'; // New video import
-=======
 import Thermalvideo from '../../assets/Thermalvideo.mp4'; // New video import
 import PerceptualRobotics from '../../assets/PerceptualRobotics.mp4'; // New video import
 import ProjectCard from '../../common/ProjectCard';
->>>>>>> origin/master
 
 function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState(null);
 
-<<<<<<< HEAD
-  const handleOpenModal = (content) => {
-=======
   const handleOpenModal = (content) => {  
->>>>>>> origin/master
     setModalContent(content);
     setModalOpen(true);
   };
@@ -42,9 +29,6 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-<<<<<<< HEAD
-        
-=======
         <ProjectCard
           src={PerceptualRobotics}
           h3="Robotics Competition"
@@ -52,7 +36,6 @@ function Projects() {
           onButtonClick={() => handleOpenModal({ src: PerceptualRobotics, h3: "Robotics Competition: Runner-up Position", p: "• Achieved runner-up position in a departmental competition with an algorithm capable of hitting all targets in 4.64 seconds, outperforming the average time of 16 seconds." })}
           isVideo={true}
         />
->>>>>>> origin/master
         <ProjectCard
           src={Thermalvideo}
           h3="Thermal Simulation using Abaqus FEA"
@@ -60,11 +43,6 @@ function Projects() {
           onButtonClick={() => handleOpenModal({ src: Thermalvideo, h3: "Thermal Resistance Simulation", p: "• Conducted simulations using Abaqus to evaluate changes in thermal resistance during large plastic deformations at each deformation stage." })}
           isVideo={true}
         />
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
         <ProjectCard
           src={computerVision}
           h3="OpenMV Cam computer vision"
@@ -97,11 +75,6 @@ function Projects() {
           onButtonClick={() => handleOpenModal({ src: aimForge, h3: "AimForge (3D FPS)", p: "• Developed 'Aimforge,' a skill-enhancing game in Unity3D, designed to improve players Hand-Eye Coordinationa and Cognitive Skills., within a 3-day timeframe." })}
           isVideo={true}
         />
-<<<<<<< HEAD
-
-
-=======
->>>>>>> origin/master
         <ProjectCard
           src={pythonGame}
           h3="2D Python game"
